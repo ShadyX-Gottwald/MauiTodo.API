@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTodo.Client1.Views.ManageTodos"
+             Title="ManageTodos">
+    
+    <VerticalStackLayout Margin="20,10,20,0">
+        <Label Text="What do you want to do?"></Label>
+        <Entry Text="{Binding Path= Todo.Title}" Placeholder="Enter Item"></Entry>
+
+        <Button Text="Save" Clicked="OnSaveClicked" Margin="0,5,5,5"></Button>
+        <Button Text="Delete" Clicked="OnDeleteClicked" Margin="0,5,5,5"></Button>
+        <Button Text="Cancel" Clicked="OnCanceledClicked" Margin="0,5,5,5" ></Button>
+
+    </VerticalStackLayout>
+</ContentPage>
